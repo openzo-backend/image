@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: imagegrpc
+
+spec:
+  selector:
+    app: image-deployment
+  ports:
+    - targetPort: 50055
+      port: 50055
+     
+   
